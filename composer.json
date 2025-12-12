@@ -1,0 +1,28 @@
+{
+    "name": "hicoopay/exception-notify",
+    "description": "异常监控, 支持钉钉群机器人,飞书群机器人,企业微信群机器人, 以及自定义通道",
+    "type": "library",
+    "authors": [
+        {
+            "name": "wangchengtao",
+            "email": "915129420@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hicoopay\\ExceptionNotify\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hicoopay\\ExceptionNotify\\Tests\\": "tests/"
+        }
+    }
+}

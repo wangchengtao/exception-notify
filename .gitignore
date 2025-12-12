@@ -1,0 +1,15 @@
+*.DS_Store
+/vendor
+sftp-config.json
+/*.php
+!.php-cs-fixer.dist.php
+/.idea
+/coverage
+/.split
+/composer.lock
+.php-cs-fixer.cache
+.phpunit.result.cache
+.phpunit.cache
+cghooks.lock
+docs/dist/
+.phplint-cache
