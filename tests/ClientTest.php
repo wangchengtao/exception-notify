@@ -12,7 +12,7 @@ class ClientTest extends TestCase
     public function test_dingtalk()
     {
         $channel = new Dingtalk([
-            'access_token' => '347f91471b7639adaf663e24d8cb8a5c886aa6f0b588dc8a2cb6b85cc0b0206e',
+            'access_token' => '*******************',
         ]);
 
         $client = new Client($channel);
@@ -21,7 +21,7 @@ class ClientTest extends TestCase
         $text->setTitle('测试');
         $text->setContent('异常测试');
         $text->setAt([
-            '18716397897',
+            '******',
         ]);
 
         $client->send($text);
