@@ -1,14 +1,14 @@
 <?php
-namespace Hicoopay\ExceptionNotify;
+namespace Summer\ExceptionNotify;
 
 
-use Hicoopay\ExceptionNotify\Channel\AbstractChannel;
-use Hicoopay\ExceptionNotify\Message\AbstractMessage;
+use Summer\ExceptionNotify\Channel\AbstractChannel;
+use Summer\ExceptionNotify\Message\AbstractMessage;
 
 class Client
 {
     /**
-     * @var \Hicoopay\ExceptionNotify\Channel\AbstractChannel
+     * @var \Summer\ExceptionNotify\Channel\AbstractChannel
      */
     protected  $channel;
 
@@ -24,7 +24,7 @@ class Client
     }
 
     /**
-     * @throws \Hicoopay\ExceptionNotify\Exception\NotifyException
+     * @throws \Summer\ExceptionNotify\Exception\NotifyException
      */
     public function send(AbstractMessage $message): void
     {

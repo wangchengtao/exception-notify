@@ -1,5 +1,5 @@
 <?php
-namespace Hicoopay\ExceptionNotify\Exception;
+namespace Summer\ExceptionNotify\Exception;
 
 use RuntimeException;
 

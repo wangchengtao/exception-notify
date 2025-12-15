@@ -1,11 +1,11 @@
 <?php
 
-namespace Hicoopay\ExceptionNotify\Tests;
+namespace Summer\ExceptionNotify\Tests;
 
-use Hicoopay\ExceptionNotify\Channel\Dingtalk;
-use Hicoopay\ExceptionNotify\Client;
-use Hicoopay\ExceptionNotify\Template\DingTalk\DingtalkText;
-use Hicoopay\ExceptionNotify\Template\Text;
+use Summer\ExceptionNotify\Channel\Dingtalk;
+use Summer\ExceptionNotify\Client;
+use Summer\ExceptionNotify\Message\DingtalkText;
+use Summer\ExceptionNotify\Message\Text;
 
 class ClientTest extends TestCase
 {

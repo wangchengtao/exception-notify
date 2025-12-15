@@ -1,9 +1,9 @@
 <?php
-namespace Hicoopay\ExceptionNotify\Channel;
+namespace Summer\ExceptionNotify\Channel;
 
 use GuzzleHttp\Client;
-use Hicoopay\ExceptionNotify\Contract\NotifyInterface;
-use Hicoopay\ExceptionNotify\Exception\NotifyException;
+use Summer\ExceptionNotify\Contract\NotifyInterface;
+use Summer\ExceptionNotify\Exception\NotifyException;
 use Psr\Http\Message\ResponseInterface;
 
 abstract class AbstractChannel implements NotifyInterface

@@ -1,7 +1,7 @@
 <?php
-namespace Hicoopay\ExceptionNotify\Contract;
+namespace Summer\ExceptionNotify\Contract;
 
-use Hicoopay\ExceptionNotify\Message\AbstractMessage;
+use Summer\ExceptionNotify\Message\AbstractMessage;
 use Psr\Http\Message\ResponseInterface;
 
 interface NotifyInterface

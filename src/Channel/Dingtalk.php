@@ -1,9 +1,9 @@
 <?php
 
-namespace Hicoopay\ExceptionNotify\Channel;
+namespace Summer\ExceptionNotify\Channel;
 
-use Hicoopay\ExceptionNotify\Exception\NotifyException;
-use Hicoopay\ExceptionNotify\Message\AbstractMessage;
+use Summer\ExceptionNotify\Exception\NotifyException;
+use Summer\ExceptionNotify\Message\AbstractMessage;
 use Psr\Http\Message\ResponseInterface;
 
 class Dingtalk extends AbstractChannel

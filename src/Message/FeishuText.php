@@ -1,8 +1,8 @@
 <?php
 
-namespace Hicoopay\ExceptionNotify\Message;
+namespace Summer\ExceptionNotify\Message;
 
-use Hicoopay\ExceptionNotify\Message\Text;
+use Summer\ExceptionNotify\Message\Text;
 
 class FeishuText extends Text
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Hicoopay\ExceptionNotify\Message;
+namespace Summer\ExceptionNotify\Message;
 
 abstract class Markdown extends AbstractMessage
 {

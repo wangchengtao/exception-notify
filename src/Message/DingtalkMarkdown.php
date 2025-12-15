@@ -1,8 +1,8 @@
 <?php
 
-namespace Hicoopay\ExceptionNotify\Message;
+namespace Summer\ExceptionNotify\Message;
 
-use Hicoopay\ExceptionNotify\Message\Markdown;
+use Summer\ExceptionNotify\Message\Markdown;
 
 class DingtalkMarkdown extends Markdown
 {

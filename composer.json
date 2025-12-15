@@ -1,5 +1,5 @@
 {
-    "name": "hicoopay/exception-notify",
+    "name": "wangchengtao/exception-notify",
     "description": "异常监控, 支持钉钉群机器人,飞书群机器人,企业微信群机器人, 以及自定义通道",
     "type": "library",
     "authors": [
@@ -17,12 +17,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Hicoopay\\ExceptionNotify\\": "src/"
+            "Summer\\ExceptionNotify\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Hicoopay\\ExceptionNotify\\Tests\\": "tests/"
+            "Summer\\ExceptionNotify\\Tests\\": "tests/"
         }
     }
 }

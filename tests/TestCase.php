@@ -1,6 +1,6 @@
 <?php
 
-namespace Hicoopay\ExceptionNotify\Tests;
+namespace Summer\ExceptionNotify\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

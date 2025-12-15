@@ -10,7 +10,7 @@
 
 ## 安装
 ```bash
-composer require hicoopay/exception-notify
+composer require wangchengtao/exception-notify
 ```
 
 ## 使用
