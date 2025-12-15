@@ -1,6 +1,6 @@
 <?php
 
-namespace Hicoopay\ExceptionNotify\Template;
+namespace Hicoopay\ExceptionNotify\Message;
 
 abstract class AbstractMessage
 {
@@ -18,6 +18,8 @@ abstract class AbstractMessage
      * @var array
      */
     protected $at;
+
+    protected $isAtAll = false;
 
     public function getTitle(): string
     {
@@ -52,6 +54,16 @@ abstract class AbstractMessage
         return $this;
     }
 
+    public function isAtAll(): bool
+    {
+        return $this->isAtAll;
+    }
+
+    public function atAll(): AbstractMessage
+    {
+        $this->isAtAll = true;
+        return $this;
+    }
 
     abstract public function getBody(): array;
 }

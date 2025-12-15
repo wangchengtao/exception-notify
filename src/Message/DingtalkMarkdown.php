@@ -1,8 +1,8 @@
 <?php
 
-namespace Hicoopay\ExceptionNotify\Template\DingTalk;
+namespace Hicoopay\ExceptionNotify\Message;
 
-use Hicoopay\ExceptionNotify\Template\Markdown;
+use Hicoopay\ExceptionNotify\Message\Markdown;
 
 class DingtalkMarkdown extends Markdown
 {
@@ -15,6 +15,7 @@ class DingtalkMarkdown extends Markdown
                 'title' => $this->getTitle(),
             ],
             'at' => [
+                'isAtAll' => $this->isAtAll(),
                 'atMobiles' => $this->getAt(),
             ],
         ];

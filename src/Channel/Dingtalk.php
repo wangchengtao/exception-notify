@@ -3,7 +3,7 @@
 namespace Hicoopay\ExceptionNotify\Channel;
 
 use Hicoopay\ExceptionNotify\Exception\NotifyException;
-use Hicoopay\ExceptionNotify\Template\AbstractMessage;
+use Hicoopay\ExceptionNotify\Message\AbstractMessage;
 use Psr\Http\Message\ResponseInterface;
 
 class Dingtalk extends AbstractChannel

@@ -1,6 +1,6 @@
 <?php
 
-namespace Hicoopay\ExceptionNotify\Template;
+namespace Hicoopay\ExceptionNotify\Message;
 
 abstract class Text extends AbstractMessage
 {

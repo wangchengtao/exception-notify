@@ -3,7 +3,7 @@ namespace Hicoopay\ExceptionNotify;
 
 
 use Hicoopay\ExceptionNotify\Channel\AbstractChannel;
-use Hicoopay\ExceptionNotify\Template\AbstractMessage;
+use Hicoopay\ExceptionNotify\Message\AbstractMessage;
 
 class Client
 {

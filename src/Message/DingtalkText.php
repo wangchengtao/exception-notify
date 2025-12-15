@@ -1,19 +1,11 @@
 <?php
 
-namespace Hicoopay\ExceptionNotify\Template\DingTalk;
+namespace Hicoopay\ExceptionNotify\Message;
 
-use Hicoopay\ExceptionNotify\Template\Text;
+use Hicoopay\ExceptionNotify\Message\Text;
 
 class DingtalkText extends Text
 {
-    protected $isAtAll = false;
-
-    public function isAtAll(): DingtalkText
-    {
-        $this->isAtAll = true;
-        return $this;
-    }
-
     public function getBody(): array
     {
         return [
@@ -22,7 +14,7 @@ class DingtalkText extends Text
                 'content' => $this->getContent(),
             ],
             'at' => [
-                'isAtAll' => $this->isAtAll,
+                'isAtAll' => $this->isAtAll(),
                 'atMobiles' => $this->getAt(),
             ],
         ];
