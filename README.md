@@ -10,7 +10,7 @@
 
 ## 安装
 ```bash
-composer require wangchengtao/exception-notify
+composer require wangchengtao/exception-notify:dev-master
 ```
 
 ## 使用
