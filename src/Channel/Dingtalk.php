@@ -15,7 +15,7 @@ class Dingtalk extends AbstractChannel
 
     public function notify(AbstractMessage $message): ResponseInterface
     {
-        if (!$this->config['keyword']) {
+        if ($this->config['auth_type'] == 'keyword') {
             return $this->getClient()->post($this->baseUrl, [
                 'query' => [
                     'access_token' => $this->config['access_token'],
