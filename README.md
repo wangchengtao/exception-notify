@@ -31,6 +31,9 @@ $text->setAt([
 $client->send($text);
 ```
 
+## 效果图
+![效果图](./img.png)
+
 ## 自定义通道
 * 所有自定义通道继承自 `AbstractChannel`
 * 所有自定义消息继承自 `AbstractMessage`
