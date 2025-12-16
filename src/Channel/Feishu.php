@@ -19,7 +19,7 @@ class Feishu extends AbstractChannel
         }
     }
 
-    public function send(AbstractMessage $message): ResponseInterface
+    public function notify(AbstractMessage $message): ResponseInterface
     {
         return $this->getClient()->post($this->baseUrl . $this->config['access_token'], [
             'json' => $this->getBody() + $message->getBody(),

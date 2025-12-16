@@ -28,7 +28,6 @@ class Client
      */
     public function send(AbstractMessage $message): void
     {
-        $res = $this->channel->send($message);
-        $this->channel->handleResponse($res);
+        $this->channel->send($message);
     }
 }

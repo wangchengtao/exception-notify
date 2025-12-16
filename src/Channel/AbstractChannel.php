@@ -5,6 +5,7 @@ use GuzzleHttp\Client;
 use Summer\ExceptionNotify\Contract\NotifyInterface;
 use Summer\ExceptionNotify\Exception\NotifyException;
 use Psr\Http\Message\ResponseInterface;
+use Summer\ExceptionNotify\Message\AbstractMessage;
 
 abstract class AbstractChannel implements NotifyInterface
 {
@@ -21,6 +22,12 @@ abstract class AbstractChannel implements NotifyInterface
     public function getClient(): Client
     {
         return new Client();
+    }
+
+    public function send(AbstractMessage $message): void
+    {
+        $res = $this->notify($message);
+        $this->handleResponse($res);
     }
 
     /**

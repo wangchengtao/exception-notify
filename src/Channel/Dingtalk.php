@@ -13,7 +13,7 @@ class Dingtalk extends AbstractChannel
      */
     protected $baseUrl = 'https://oapi.dingtalk.com/robot/send';
 
-    public function send(AbstractMessage $message): ResponseInterface
+    public function notify(AbstractMessage $message): ResponseInterface
     {
         if (!$this->config['keyword']) {
             return $this->getClient()->post($this->baseUrl, [
