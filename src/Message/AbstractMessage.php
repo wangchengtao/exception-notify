@@ -17,7 +17,7 @@ abstract class AbstractMessage
     /**
      * @var array
      */
-    protected $at;
+    protected $at = [];
 
     protected $isAtAll = false;
 
