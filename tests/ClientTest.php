@@ -4,8 +4,7 @@ namespace Summer\ExceptionNotify\Tests;
 
 use Summer\ExceptionNotify\Channel\Dingtalk;
 use Summer\ExceptionNotify\Client;
-use Summer\ExceptionNotify\Message\DingtalkText;
-use Summer\ExceptionNotify\Message\Text;
+use Summer\ExceptionNotify\Message\Dingtalk\DingtalkText;
 
 class ClientTest extends TestCase
 {

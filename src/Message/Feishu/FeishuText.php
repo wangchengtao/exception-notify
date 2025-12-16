@@ -1,6 +1,6 @@
 <?php
 
-namespace Summer\ExceptionNotify\Message;
+namespace Summer\ExceptionNotify\Message\Feishu;
 
 use Summer\ExceptionNotify\Message\Text;
 
