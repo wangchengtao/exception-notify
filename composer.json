@@ -1,7 +1,7 @@
 {
     "name": "wangchengtao/exception-notify",
     "description": "异常监控, 支持钉钉群机器人,飞书群机器人,企业微信群机器人, 以及自定义通道",
-    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "wangchengtao",
