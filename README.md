@@ -9,7 +9,7 @@
 
 ## 安装
 ```bash
-composer require wangchengtao/exception-notify:^1.0
+composer require wangchengtao/exception-notify
 ```
 
 ## 使用
