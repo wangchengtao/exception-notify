@@ -12,6 +12,9 @@ class ClientTest extends TestCase
     {
         $channel = new Dingtalk([
             'access_token' => '*******************',
+            'auth_type' => 'sign',
+            'secret' => 'xxxxxxxxxxxxxxxxxxxx',
+            'at' => [],
         ]);
 
         $client = new Client($channel);

@@ -20,14 +20,14 @@ class Dingtalk extends AbstractChannel
                 'query' => [
                     'access_token' => $this->config['access_token'],
                 ],
-                'json' => $message->getBody(),
+                'json' => $this->getPayload($message),
             ]);
         }
 
         if ($this->config['auth_type'] == 'sign') {
             return $this->getClient()->post($this->baseUrl, [
                 'query' => $this->getQuery(),
-                'json' => $message->getBody(),
+                'json' => $this->getPayload($message),
             ]);
         }
 
@@ -56,5 +56,19 @@ class Dingtalk extends AbstractChannel
             'timestamp' => $timestamp,
             'sign' => $sign,
         ];
+    }
+
+    protected function getPayload(AbstractMessage $message): array
+    {
+        $body = $message->getBody();
+
+        if (!$message->isAtAll() &&
+            count($message->getAt()) == 0 &&
+            count($this->config['at']) > 0
+        ) {
+            $body['at']['atMobiles'] = $this->config['at'];
+        }
+
+        return $body;
     }
 }

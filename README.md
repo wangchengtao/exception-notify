@@ -16,6 +16,10 @@ composer require wangchengtao/exception-notify
 ```php
 $channel = new Dingtalk([
     'access_token' => 'xxxxxxxxxxxxx',
+    'auth_type' => 'sign', // 安全设置类型: keyword | sign
+    'keyword' => '异常', // 当 auth_type 为 keyword 时，必填
+    'secret' => 'xxxxxxxxxxxxxxxxxxxx', // 当 auth_type 为 sign 时，必填
+    'at' => [], // 当 message 对象未指定@人员时，此为默认值
 ]);
 
 $client = new Client($channel);
