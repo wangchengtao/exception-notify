@@ -24,6 +24,7 @@ $channel = new Dingtalk([
 
 $client = new Client($channel);
 
+// 文本格式
 $text = new DingtalkText();
 $text->setTitle('测试');
 $text->setContent('异常测试');
@@ -32,10 +33,19 @@ $text->setAt([
 ]);
 
 $client->send($text);
+
+// markdown 格式
+$markdown = new DingtalkMarkdown();
+$markdown->setTitle('Markdown消息标题');
+$markdown->setContent("#### 这是Markdown消息内容 \n ![图片](https://example.com/image.png)");
+$markdown->atAll();
+
+$client->send($markdown);
 ```
 
 ## 效果图
-![效果图](assets/img.png)
+![效果图](assets/text.png)
+![效果图](assets/markdown.png)
 
 ## 自定义通道
 * 所有自定义通道继承自 `AbstractChannel`
