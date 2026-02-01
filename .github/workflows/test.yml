@@ -1,0 +1,27 @@
+name: Testing
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: true
+      matrix:
+        php-versions: ['7.2', '7.4', '8.0', '8.1', '8.2']
+
+    steps:
+      - name: Setup php
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+
+      - name: Checkout
+        run: action/checkout@v4
+
+      - name: Install composer
+        run: composer install --no-plugins --no-scripts --prefer-dist --no-progress --no-interaction
+
+      - name: Execute test
+        run: vendor/bin/phpunit

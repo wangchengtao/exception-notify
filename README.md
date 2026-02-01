@@ -59,12 +59,12 @@ class CustomChannel extends AbstractChannel
 {
     public function handleResponse(ResponseInterface $response): void
     {
-        // TODO: Implement getBody() method.
+        // 
     }
     
-    public function send(string $content): ResponseInterface
+    public function notify(AbstractMessage $message): ResponseInterface
     {
-        // TODO: Implement getBody() method.
+        // 
     }
 }
 
@@ -72,7 +72,7 @@ class CustomMessage extends AbstractMessage
 {
     public function getBody() : array
     {
-        // TODO: Implement getBody() method.
+        //
     }
 }
 
