@@ -18,7 +18,7 @@ jobs:
           php-version: ${{ matrix.php-versions }}
 
       - name: Checkout
-        run: action/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Install composer
         run: composer install --no-plugins --no-scripts --prefer-dist --no-progress --no-interaction
