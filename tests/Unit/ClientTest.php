@@ -1,11 +1,12 @@
 <?php
 
-namespace Summer\ExceptionNotify\Tests;
+namespace Summer\ExceptionNotify\Tests\Unit;
 
 use Summer\ExceptionNotify\Channel\Dingtalk;
 use Summer\ExceptionNotify\Client;
 use Summer\ExceptionNotify\Message\Dingtalk\DingtalkMarkdown;
 use Summer\ExceptionNotify\Message\Dingtalk\DingtalkText;
+use Summer\ExceptionNotify\Tests\TestCase;
 
 class ClientTest extends TestCase
 {
