@@ -1,8 +1,8 @@
 <?php
 
-namespace Summer\ExceptionNotify\Message\Feishu;
+namespace Summer\MessageNotify\Message\Feishu;
 
-use Summer\ExceptionNotify\Message\Markdown;
+use Summer\MessageNotify\Message\Markdown;
 
 class FeishuMarkdown extends Markdown
 {

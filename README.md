@@ -9,7 +9,7 @@
 
 ## 安装
 ```bash
-composer require wangchengtao/exception-notify
+composer require wangchengtao/message-notify
 ```
 
 ## 使用
@@ -52,8 +52,8 @@ $client->send($markdown);
 * 所有自定义消息继承自 `AbstractMessage`
 
 ```php
-use Summer\ExceptionNotify\Channel\AbstractChannel;
-use Summer\ExceptionNotify\Message\AbstractMessage;
+use Summer\MessageNotify\Channel\AbstractChannel;
+use Summer\MessageNotify\Message\AbstractMessage;
 
 class CustomChannel extends AbstractChannel
 {

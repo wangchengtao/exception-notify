@@ -1,6 +1,6 @@
 <?php
 
-namespace Summer\ExceptionNotify\Tests;
+namespace Summer\MessageNotify\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

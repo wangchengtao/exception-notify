@@ -1,9 +1,9 @@
 <?php
 
-namespace Summer\ExceptionNotify\Channel;
+namespace Summer\MessageNotify\Channel;
 
-use Summer\ExceptionNotify\Exception\NotifyException;
-use Summer\ExceptionNotify\Message\AbstractMessage;
+use Summer\MessageNotify\Exception\NotifyException;
+use Summer\MessageNotify\Message\AbstractMessage;
 use Psr\Http\Message\ResponseInterface;
 
 class Feishu extends AbstractChannel

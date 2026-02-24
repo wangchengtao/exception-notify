@@ -1,8 +1,8 @@
 <?php
 
-namespace Summer\ExceptionNotify\Message\Dingtalk;
+namespace Summer\MessageNotify\Message\Dingtalk;
 
-use Summer\ExceptionNotify\Message\Text;
+use Summer\MessageNotify\Message\Text;
 
 class DingtalkText extends Text
 {

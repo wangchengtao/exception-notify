@@ -1,7 +1,7 @@
 <?php
-namespace Summer\ExceptionNotify\Contract;
+namespace Summer\MessageNotify\Contract;
 
-use Summer\ExceptionNotify\Message\AbstractMessage;
+use Summer\MessageNotify\Message\AbstractMessage;
 use Psr\Http\Message\ResponseInterface;
 
 interface NotifyInterface

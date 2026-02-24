@@ -1,5 +1,5 @@
 <?php
-namespace Summer\ExceptionNotify\Exception;
+namespace Summer\MessageNotify\Exception;
 
 use RuntimeException;
 

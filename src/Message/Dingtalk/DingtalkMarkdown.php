@@ -1,8 +1,8 @@
 <?php
 
-namespace Summer\ExceptionNotify\Message\Dingtalk;
+namespace Summer\MessageNotify\Message\Dingtalk;
 
-use Summer\ExceptionNotify\Message\Markdown;
+use Summer\MessageNotify\Message\Markdown;
 
 class DingtalkMarkdown extends Markdown
 {

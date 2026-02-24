@@ -1,14 +1,14 @@
 <?php
-namespace Summer\ExceptionNotify;
+namespace Summer\MessageNotify;
 
 
-use Summer\ExceptionNotify\Channel\AbstractChannel;
-use Summer\ExceptionNotify\Message\AbstractMessage;
+use Summer\MessageNotify\Channel\AbstractChannel;
+use Summer\MessageNotify\Message\AbstractMessage;
 
 class Client
 {
     /**
-     * @var \Summer\ExceptionNotify\Channel\AbstractChannel
+     * @var \Summer\MessageNotify\Channel\AbstractChannel
      */
     protected  $channel;
 
@@ -24,7 +24,7 @@ class Client
     }
 
     /**
-     * @throws \Summer\ExceptionNotify\Exception\NotifyException
+     * @throws \Summer\MessageNotify\Exception\NotifyException
      */
     public function send(AbstractMessage $message): void
     {

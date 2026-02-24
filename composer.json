@@ -1,6 +1,9 @@
 {
-    "name": "wangchengtao/exception-notify",
+    "name": "wangchengtao/message-notify",
     "description": "异常监控, 支持钉钉群机器人,飞书群机器人,企业微信群机器人, 以及自定义通道",
+    "keywords": [
+        "exception", "notify", "dingtalk", "feishu"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -17,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Summer\\ExceptionNotify\\": "src/"
+            "Summer\\MessageNotify\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Summer\\ExceptionNotify\\Tests\\": "tests/"
+            "Summer\\MessageNotify\\Tests\\": "tests/"
         }
     }
 }

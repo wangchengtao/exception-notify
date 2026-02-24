@@ -1,8 +1,8 @@
 <?php
 
-namespace Summer\ExceptionNotify\Message\Feishu;
+namespace Summer\MessageNotify\Message\Feishu;
 
-use Summer\ExceptionNotify\Message\Text;
+use Summer\MessageNotify\Message\Text;
 
 class FeishuText extends Text
 {

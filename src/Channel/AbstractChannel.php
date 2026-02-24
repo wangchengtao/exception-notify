@@ -1,11 +1,11 @@
 <?php
-namespace Summer\ExceptionNotify\Channel;
+namespace Summer\MessageNotify\Channel;
 
 use GuzzleHttp\Client;
-use Summer\ExceptionNotify\Contract\NotifyInterface;
-use Summer\ExceptionNotify\Exception\NotifyException;
+use Summer\MessageNotify\Contract\NotifyInterface;
+use Summer\MessageNotify\Exception\NotifyException;
 use Psr\Http\Message\ResponseInterface;
-use Summer\ExceptionNotify\Message\AbstractMessage;
+use Summer\MessageNotify\Message\AbstractMessage;
 
 abstract class AbstractChannel implements NotifyInterface
 {

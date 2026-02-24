@@ -1,6 +1,6 @@
 <?php
 
-namespace Summer\ExceptionNotify\Message;
+namespace Summer\MessageNotify\Message;
 
 abstract class Text extends AbstractMessage
 {
